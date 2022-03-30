@@ -1,0 +1,11 @@
+﻿.outer{
+    position:relative;
+    height:600px;
+}
+.inner{
+    position:absolute;
+    top:45%;
+    text-align:center;
+    left:45%;
+    font-family:Oswald;
+}
