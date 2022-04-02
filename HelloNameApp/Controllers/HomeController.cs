@@ -18,7 +18,6 @@ namespace HelloNameApp.Controllers
         [HttpPost]
         public IActionResult Index(Name name)
         {
-            Repository.AddName(name);
             return View("PostIndex", name);
         }
     }

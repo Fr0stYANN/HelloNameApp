@@ -7,6 +7,6 @@ namespace HelloNameApp.Models
 {
     public class Name
     {
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
     }
 }
