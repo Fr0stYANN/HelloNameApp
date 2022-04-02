@@ -10,22 +10,16 @@ namespace HelloNameApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
         [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult Index(string HelloName)
+        public IActionResult Index(Name name)
         {
-            ViewBag.Message = $"Hello, {HelloName}";
-            return View("PostIndex");
+            Repository.AddName(name);
+            return View("PostIndex", name);
         }
     }
 }
