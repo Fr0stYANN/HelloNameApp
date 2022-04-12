@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 namespace HelloNameApp.Controllers
 {
-    public class HomeController : Controller
+    public class HomeControllerVlad : Controller
     {
         [HttpGet]
         public IActionResult Index()

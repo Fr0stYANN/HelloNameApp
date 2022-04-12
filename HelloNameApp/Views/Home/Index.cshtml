@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, Mircosoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>Index</title>
@@ -6,9 +8,9 @@
 </head>
 <body>
     <div class="outer">
-            <form  asp-action ="PostIndex" class = "inner" method="post">
+            <form class = "inner" method="post">
                 <label>Enter Name:</label><br />
-                <input type="text" name="UserName" />
+                <input  type="text" name="UserName" />
                 <br />
                 <input type="submit" value="send" />
             </form>
